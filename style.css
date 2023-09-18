@@ -50,8 +50,9 @@ width:100%;
 /* ヘッダー
 *************/
 #header{
+background-color:rgb(230, 249, 255);
 z-index:100;
-margin:20px 0 28px;
+margin:0;
 }
 
 #header:after{
@@ -75,19 +76,19 @@ padding:10px 0 0;
 }
 
 .logo a{
-font-size:20px;
+font-size:40px;
 color:#444;
 font-weight:bold;
 line-height:1;
 }
 
 .logo span{
-font-size:12px;
+font-size:20px;
 font-weight:normal;
 }
 
 #header h1{
-font-size:11px;
+font-size:10px;
 color:#444;
 margin:10px 0 0;
 }
@@ -203,7 +204,7 @@ section.content p{margin-bottom:5px;}
 h3.heading{
 padding:3px 0 13px;
 margin-bottom:30px;
-font-size:16px;
+font-size:30px;
 border-bottom:2px solid #ccc;
 }
 
@@ -232,6 +233,7 @@ margin:3px 0 10px 10px;
 /* フッター
 *************/
 #footer{
+  background-color:rgb(230, 249, 255);
 clear:both;
 padding:20px 0;
 overflow:hidden;
@@ -360,9 +362,9 @@ border-bottom:2px solid #f0f0f0;
 .post h3{
 margin:10px 0 30px;
 padding-bottom:10px;
-font-size:110%;
+font-size:150%;
 font-weight:normal;
-color:#777;
+color:#242424;
 border-bottom:2px solid #f0f0f0;
 }
 
