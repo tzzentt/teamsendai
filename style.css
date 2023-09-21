@@ -50,10 +50,14 @@ width:100%;
 /* ヘッダー
 *************/
 #header{
+position: -webkit-sticky;
+position: sticky;
+top: 0;
 background-color:rgb(230, 249, 255);
 z-index:100;
 margin:0;
 }
+
 
 #header:after{
 content:"";
@@ -76,14 +80,15 @@ padding:10px 0 0;
 }
 
 .logo a{
-font-size:40px;
+font-size:35px;
 color:#444;
 font-weight:bold;
 line-height:1;
+padding:0;
 }
 
 .logo span{
-font-size:20px;
+font-size:15px;
 font-weight:normal;
 }
 
@@ -456,7 +461,6 @@ a#menu{display:none;}
 #topnav{
 float:right;
 margin-top:-5px;
-
 }
 
 #topnav li{
@@ -491,7 +495,7 @@ display:none;
 #topnav li:hover ul{
 display:block;
 position:absolute;
-top:80px;
+top:auto;
 left:0;
 z-index:500;
 }
@@ -529,7 +533,9 @@ background:#eee;
             box-sizing: border-box;
 }
 
-#header h1{text-align:center;}
+#header h1{
+text-align:center;
+}
 
 #header .logo,#footer .logo{
 float:none;
@@ -562,8 +568,10 @@ color:#555;
 }
 
 nav#mainNav a#menu span{padding-left:10px;}
-nav#mainNav a span:before{content:"≡ ";}
+nav#mainNav a#menu span:before{content:"≡ ";}
 nav#mainNav a.menuOpen span:before{content:"× ";}
+/**/
+nav#mainNav ul#topnav span{font-size:0px;}
 
 nav#mainNav a#menu:hover{cursor:pointer;}
 
@@ -576,9 +584,12 @@ top:0;
 z-index:1;
 }
 
-nav#mainNav ul{margin:0;padding:0;}
+nav#mainNav ul{
+margin:0;
+padding:0;
+}
 
-  nav#mainNav ul li{
+nav#mainNav ul li{
 float:none;
 clear:both;
 width:100%;
@@ -595,9 +606,11 @@ color:#555;
 }
 
 nav#mainNav ul li a span{padding-left:10px;}
+
 nav#mainNav ul li:first-child a{border-top:1px dashed #e8e8e8;}
 
 nav#mainNav ul li:last-child a{border:0;}
+
 nav#mainNav ul li li:last-child a{border:0;}
 nav#mainNav ul li li:last-child a{border-bottom:1px dashed #e8e8e8;}
  
