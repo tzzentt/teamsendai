@@ -374,6 +374,11 @@ color:#242424;
 border-bottom:2px solid #f0f0f0;
 }
 
+.post .box{
+  padding:0px 40px;
+  margin:0px 40px;
+}
+
 .post blockquote{
 clear:both;
 padding:10px 0 10px 15px;
@@ -405,20 +410,29 @@ background:#eee;
 
 .post dd{padding-bottom:10px;}
 
-.post img{max-width:100%;height:auto;}
+.post img{
+  max-width:100%;
+  height:auto;
+
+}
+
 
 img.aligncenter{
 display:block;
 margin:5px auto;
 }
 
-img.alignright, img.alignleft{
+img.alignright{
 padding:4px;
 margin:0 0 2px 7px;
 display:inline;
 }
 
-img.alignleft{margin:0 7px 2px 0;}
+img.alignleft{
+  padding:4px;
+  margin:0 7px 2px 0;
+  display:inline;
+}
 
 .alignright{float:right;}
 .alignleft{float:left;}
